@@ -11,6 +11,8 @@ user_age = input('Ведите ваш возраст ')
 user_name = input('Введите ваш логин: ')
 
 while True:
+    
+    
     if user_name == users:
         if user_age.isdigit():
             user_age = int(user_age)
@@ -27,10 +29,12 @@ while True:
         if user_cmd == '1':
             user_age = input('Ведите ваш возраст ')
             user_name = input('Введите ваш логин: ')
-
-        user_cmd = input('Хотите продолжить? \n Да \n Нет \n')
-        if user_cmd == '2':
-            break
+            users.append(user_name)
+            
+    user_cmd = input('Хотите продолжить? \n Да \n Нет \n')
+    if user_cmd == '2':
+        break
+        
 
 
 
