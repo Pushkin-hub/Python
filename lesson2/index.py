@@ -71,11 +71,16 @@ list_names.insert(index, name)
 
 print(list_names)
 
+adult = []
+nonadult = []
 
-
-
-
-
+while len(adult) < 5 and len(nonadult) < 5:
+    name = input('Input name: ')
+    age = int(input('Input age: '))
+    if age > 18:
+        adult.append([name,age])
+    else:
+        nonadult.append([name,age])
 
 
 
