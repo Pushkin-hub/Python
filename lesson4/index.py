@@ -44,7 +44,11 @@ h = [1, 2, 3]
 print(max(h))
 
 new_list = []
-
-
+old_list = [10, 20, 10, 20, 30, 40, 30, 50]
+for i in old_list:
+    if i not in new_list:
+        new_list.append(i)
+print(old_list)
+print(new_list)
 
 
