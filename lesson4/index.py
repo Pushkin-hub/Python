@@ -62,3 +62,18 @@ reversed_list = reverse_list(initial_list)
 
 print("Начальный список:", initial_list)
 print("Список в обратном порядке:", reversed_list)
+
+#################################################################
+
+def reverse_list_with_loop(input_list):
+
+  reversed_list = []
+  for i in range(len(input_list) - 1, -1, -1):
+    reversed_list.append(input_list[i])
+  return reversed_list
+
+initial_list = [10, 20, 30, 40, 50]
+reversed_list = reverse_list_with_loop(initial_list)
+
+print("Начальный список:", initial_list)
+print("Список в обратном порядке:", reversed_list)
