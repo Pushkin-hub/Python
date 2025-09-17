@@ -5,7 +5,7 @@ print(type(list_1))
 sett = {1,3, "Hallo"}
 print(type(sett))
 dictt = {1: 3, 2: "Academy"}
-print(type(Dictt))
+print(type(dictt))
 tup_2 = (1, 4, 4, 90)
 print(type(tup_2))
 print(dir(tup_2))
@@ -51,4 +51,14 @@ for i in old_list:
 print(old_list)
 print(new_list)
 
+#################################################################
 
+def reverse_list(input_list):
+
+  return input_list[::-1]
+
+initial_list = [10, 20, 30, 40, 50]
+reversed_list = reverse_list(initial_list)
+
+print("Начальный список:", initial_list)
+print("Список в обратном порядке:", reversed_list)
